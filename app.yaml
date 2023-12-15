@@ -1,0 +1,17 @@
+runtime: nodejs20
+service: socket
+
+instance_class: F1
+
+runtime_config:
+  operating_system: ubuntu22
+
+env_variables:
+  FRONTEND_HOST: "https://website-sepuh.et.r.appspot.com"
+
+resources:
+  cpu: 1
+  memory_gb: 0.5
+  disk_size_gb: 1
+
+entrypoint: "node index.js"
